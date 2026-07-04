@@ -26,9 +26,36 @@
     </script>
     <style>
         body {
+            position: relative;
             background: linear-gradient(135deg, #0f172a 0%, #111827 40%, #0f172a 100%);
             background-size: 300% 300%;
             animation: bgAnimation 20s ease infinite;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 15% 15%, rgba(99,102,241,0.20), transparent 20%),
+                radial-gradient(circle at 80% 25%, rgba(34,211,238,0.16), transparent 20%),
+                radial-gradient(circle at 50% 80%, rgba(16,185,129,0.14), transparent 25%);
+            opacity: 0.9;
+            pointer-events: none;
+            animation: bgGlow 28s ease infinite;
+            z-index: -1;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 10% 85%, rgba(139,92,246,0.08), transparent 15%),
+                radial-gradient(circle at 90% 10%, rgba(59,130,246,0.08), transparent 12%);
+            opacity: 0.8;
+            pointer-events: none;
+            animation: bgDrift 32s ease infinite;
+            z-index: -1;
         }
         @keyframes bgAnimation {
             0% {
@@ -39,6 +66,22 @@
             }
             100% {
                 background-position: 0% 50%;
+            }
+        }
+        @keyframes bgGlow {
+            0%, 100% {
+                background-position: 0% 0%, 100% 100%, 50% 80%;
+            }
+            50% {
+                background-position: 5% 10%, 95% 20%, 45% 85%;
+            }
+        }
+        @keyframes bgDrift {
+            0%, 100% {
+                background-position: 0% 0%, 100% 0%;
+            }
+            50% {
+                background-position: 5% 8%, 95% 12%;
             }
         }
     </style>
