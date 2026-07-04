@@ -24,6 +24,24 @@
             }
         }
     </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #111827 40%, #0f172a 100%);
+            background-size: 300% 300%;
+            animation: bgAnimation 20s ease infinite;
+        }
+        @keyframes bgAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
 
