@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faishal Harist Rahmawan | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 to-emerald-400 bg-clip-text text-transparent">
+                Faishal Harist
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">Tentang</a>
+                <a href="#skills" class="hover:text-white transition-colors">Keahlian</a>
+                <a href="#projects" class="hover:text-white transition-colors">Proyek</a>
+                <a href="#experience" class="hover:text-white transition-colors">Pengalaman</a>
+                <a href="#contact" class="hover:text-white transition-colors">Kontak</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-slate-400 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-white transition-colors">Tentang</a>
+            <a href="#skills" class="block text-slate-300 hover:text-white transition-colors">Keahlian</a>
+            <a href="#projects" class="block text-slate-300 hover:text-white transition-colors">Proyek</a>
+            <a href="#experience" class="block text-slate-300 hover:text-white transition-colors">Pengalaman</a>
+            <a href="#contact" class="block text-slate-300 hover:text-white transition-colors">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Centered Layout) -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center text-center max-w-3xl mx-auto" data-aos="fade-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/60 border border-slate-700 text-xs font-medium text-indigo-300 mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Tersedia untuk Kolaborasi & Magang
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 leading-tight">
+                Faishal Harist <span class="bg-gradient-to-r from-indigo-400 to-emerald-400 bg-clip-text text-transparent">Rahmawan</span>
+            </h1>
+            <p class="text-lg sm:text-xl font-semibold text-slate-400 mb-6">
+                Software Developer & IoT Enthusiast
+            </p>
+            <p class="text-slate-400 leading-relaxed mb-8 text-sm sm:text-base">
+                Mahasiswa Teknik Informatika di Politeknik Negeri Malang yang fokus pada pengembangan aplikasi perangkat lunak (Web/Mobile) dan integrasi sistem berbasis Internet of Things (IoT).
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+                <a href="#projects" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 transition-all rounded-lg font-medium text-white shadow-lg shadow-indigo-500/20 text-center">
+                    Lihat Proyek Saya
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 transition-all rounded-lg font-medium text-slate-200 border border-slate-700 text-center">
+                    Hubungi Kontak
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3" data-aos="fade-up">
+                <span class="text-indigo-500">01.</span> Tentang Saya
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="md:col-span-2 space-y-6 text-slate-300 leading-relaxed text-sm sm:text-base" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        Halo! Saya Faishal, mahasiswa semester 6 Jurusan Teknik Informatika di Politeknik Negeri Malang. Ketertarikan saya di dunia teknologi mencakup pembuatan perangkat lunak yang fungsional hingga integrasi perangkat keras pintar menggunakan teknologi IoT.
+                    </p>
+                    <p>
+                        Dengan latar belakang pendidikan menengah di bidang Rekayasa Perangkat Lunak (RPL) dari SMK Telkom Malang, saya telah membangun pemahaman dasar dalam rekayasa perangkat lunak menggunakan bahasa pemrograman Java, PHP, Dart, dan JavaScript.
+                    </p>
+                    <p>
+                        Selain perangkat lunak, saya juga mempelajari dasar-dasar jaringan komputer seperti konfigurasi router dan manajemen subnetting untuk memperkuat integrasi data pada sistem berbasis IoT.
+                    </p>
+                </div>
+                <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg font-semibold text-white border-b border-slate-800 pb-2">Pendidikan</h3>
+                    <div class="space-y-4">
+                        <div class="relative pl-4 border-l-2 border-indigo-500">
+                            <h4 class="font-bold text-slate-200 text-sm">D4 Teknik Informatika</h4>
+                            <p class="text-xs text-slate-400">Politeknik Negeri Malang</p>
+                            <p class="text-xs text-indigo-400 font-semibold mt-1">Agustus 2023 - Sekarang (IPK: 3.30)</p>
+                        </div>
+                        <div class="relative pl-4 border-l-2 border-slate-700">
+                            <h4 class="font-bold text-slate-200 text-sm">Rekayasa Perangkat Lunak</h4>
+                            <p class="text-xs text-slate-400">SMK Telkom Malang</p>
+                            <p class="text-xs text-indigo-400 font-semibold mt-1">2020 - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-up">
+                <span class="text-indigo-500">02.</span> Keahlian Teknis
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">IoT & Computer Vision</h3>
+                    <p class="text-xs text-slate-400 mb-3">Integrasi perangkat keras dan pemrosesan visual dasar.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Internet of Things</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">OpenCV</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Bahasa Pemrograman</h3>
+                    <p class="text-xs text-slate-400 mb-3">Bahasa yang digunakan dalam web dan mobile development.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Java</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">PHP</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Dart</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">JavaScript</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Web & Mobile Dev</h3>
+                    <p class="text-xs text-slate-400 mb-3">Arsitektur aplikasi dan pembuatan antarmuka responsif.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Frontend</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Full Stack</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Flutter</span>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Jaringan & Tools</h3>
+                    <p class="text-xs text-slate-400 mb-3">Manajemen infrastruktur jaringan dasar dan version control.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Router Config</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Subnetting</span>
+                        <span class="px-2 py-0.5 bg-slate-800 text-xs text-slate-300 rounded">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-up">
+                <span class="text-indigo-500">03.</span> Portofolio Proyek
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="flex flex-col bg-slate-800/20 border border-slate-800 rounded-xl overflow-hidden hover:border-indigo-500/50 hover:bg-slate-800/30 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Internet of Things</span>
+                            <i class="fa-solid fa-microchip text-slate-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Smart Parking System</h3>
+                        <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                            Mengintegrasikan sensor pendeteksi kendaraan dan firmware mikrokontroler untuk monitoring otomatis ketersediaan slot parkir secara real-time.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">Firmware</span>
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">Microcontroller</span>
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="flex flex-col bg-slate-800/20 border border-slate-800 rounded-xl overflow-hidden hover:border-indigo-500/50 hover:bg-slate-800/30 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Mobile App & CV</span>
+                            <i class="fa-solid fa-mobile-screen text-slate-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Jawara Mobile App</h3>
+                        <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                            Melakukan perancangan dan implementasi fitur visual berbasis computer vision pada perangkat mobile terintegrasi.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">Flutter</span>
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">Dart</span>
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="flex flex-col bg-slate-800/20 border border-slate-800 rounded-xl overflow-hidden hover:border-indigo-500/50 hover:bg-slate-800/30 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Full Stack Web</span>
+                            <i class="fa-solid fa-globe text-slate-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Sistem Informasi Desa</h3>
+                        <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                            Membangun sistem informasi dan administrasi desa di wilayah Kabupaten Kediri untuk mendistribusikan pelayanan publik secara digital.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">PHP</span>
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">JavaScript</span>
+                            <span class="text-xs bg-slate-850 px-2.5 py-1 rounded text-slate-300 border border-slate-800">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 flex items-center justify-center gap-3" data-aos="fade-up">
+                <span class="text-indigo-500">04.</span> Pengalaman Kerja
+            </h2>
+            <div class="relative border-l-2 border-slate-800 pl-8 ml-4 space-y-12">
+                <!-- Item 1 -->
+                <div class="relative" data-aos="fade-up">
+                    <span class="absolute -left-[41px] top-1.5 bg-indigo-500 w-5 h-5 rounded-full border-4 border-slate-900 flex items-center justify-center"></span>
+                    <span class="text-xs font-semibold text-indigo-400 block mb-1">Juni 2022 - Mei 2023</span>
+                    <h3 class="text-xl font-bold text-white">Frontend Developer - Praktek Kerja Lapangan</h3>
+                    <h4 class="text-sm text-slate-400 mb-3">Dinas Kominfo Kabupaten Kediri, Kediri</h4>
+                    <ul class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed">
+                        <li>Merancang dan mengembangkan tampilan antarmuka (user interface) pada sistem informasi pelayanan publik.</li>
+                        <li>Berkolaborasi dengan tim internal pengembang dalam penyelesaian beberapa proyek sistem pemerintahan tingkat desa.</li>
+                        <li>Membantu proses migrasi dan integrasi antarmuka agar ramah pengguna.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-4">Mari Terhubung</h2>
+            <p class="text-slate-400 max-w-lg mx-auto mb-8">
+                Saya selalu terbuka untuk berdiskusi mengenai teknologi perangkat lunak, sistem IoT, proyek kolaborasi, maupun peluang kerja magang.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+                <a href="mailto:faishalhrst26@gmail.com" class="flex items-center gap-3 px-5 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-indigo-500/50 text-slate-300 transition-colors w-full sm:w-auto justify-center">
+                    <i class="fa-regular fa-envelope text-indigo-400"></i>
+                    faishalhrst26@gmail.com
+                </a>
+                <a href="tel:+628578833141" class="flex items-center gap-3 px-5 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-indigo-500/50 text-slate-300 transition-colors w-full sm:w-auto justify-center">
+                    <i class="fa-solid fa-phone text-emerald-400"></i>
+                    +62 857-8833-141
+                </a>
+            </div>
+            <p class="text-xs text-slate-600">
+                Kediri, Jawa Timur, Indonesia
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Faishal Harist Rahmawan. All rights reserved.
+            </p>
+            <p class="text-xs text-slate-600">
+                Dibuat dengan Tailwind CSS & HTML.
+            </p>
+        </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS dengan durasi animasi
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking any link
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
